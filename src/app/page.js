@@ -88,7 +88,7 @@ export default function Home() {
       title: language === 'ru' ? 'ВОСТОЧНАЯ КУХНЯ' : 'EASTERN CUISINE',
       icon: '🏮',
       items: language === 'ru' ? [
-        { name: 'ПЛОВ СУЗАНГАРОН', weight: '1 порция', price: '95 000' },
+        { name: 'ПЛОВ СУЗАНГАРОН', weight: '1 порция', price: '65 000' }, // Цена изменена
         { name: 'СУЗАНГАРОН', weight: '1 порция', price: '210 000' },
         { name: 'ОБЖАРЕННАЯ БАРАНИНА "ВАГУРИ"', weight: '330гр / 1кг', price: '195000/650 000' },
         { name: 'БОН ВАГУРИ', weight: '330гр / 1 кг', price: '210000/680 000' },
@@ -98,7 +98,7 @@ export default function Home() {
         { name: 'ЖУЖА', weight: '1шт 450 гр', price: '120 000' },
         { name: 'ДОЛМА', weight: '8шт', price: '90 000' },
       ] : [
-        { name: 'SUZANGARON PILAF', weight: '1 serving', price: '95,000' },
+        { name: 'SUZANGARON PILAF', weight: '1 serving', price: '65,000' }, // Цена изменена
         { name: 'SUZANGARON', weight: '1 serving', price: '210,000' },
         { name: 'FRIED BEEF "VAGURI"', weight: '330g / 1 kg', price: '195,000 / 650,000' },
         { name: 'BON VAGURI', weight: '330g / 1 kg', price: '210,000 / 680,000' },
@@ -113,19 +113,25 @@ export default function Home() {
       title: language === 'ru' ? 'ЕВРОПЕЙСКАЯ КУХНЯ' : 'EUROPEAN CUISINE',
       icon: '🍷',
       items: language === 'ru' ? [
-        { name: 'ШНИЦЕЛЬ СЫРНЫМ СОУСОМ', weight: '360 гр', price: '120 000', desc: 'курица филе, слив соус, картоф деревенский , микс салата' },
+        { name: 'РАТАТУЙ', weight: '500 гр', price: '65 000', desc: 'говядина, баклажан, помидор, винный соус' }, // Добавлен
+        { name: 'ВАРАХША', weight: '300 гр', price: '75 000', desc: 'говядина, помидор, чеснок' }, // Добавлен
+        { name: 'БАРАНИНА ЧЕХОЛБЕН', weight: '350 гр', price: '85 000', desc: 'баранина, лук, помидор, перец, зелень, чеснок' }, // Добавлен
+        { name: 'ШНИЦЕЛЬ СЫРНЫМ СОУСОМ', weight: '360 гр', price: '120 000', desc: 'курица филе, слив соус, картофель деревенский, микс салата' },
         { name: 'КАРЕ ЯГНЕНКА', weight: '300гр', price: '220 000', desc: 'корейка, овощи гриль' },
         { name: 'ТУШЕНЕННАЯ ТЕЛЯТИНА С ОВОЩАМИ', weight: '300гр', price: '145 000', desc: 'Говядина, овощи' },
         { name: 'ТОМЛЕННАЯ БАРАНИНА С МОЛОДЫМ КАРТОФЕЛЕМ', weight: '340 гр', price: '190 000', desc: 'филе баранины, лук, картофель' },
         { name: 'СТЕЙК ИЗ ФОРЕЛИ ПОД СЛИВОЧНЫМ СОУСОМ', weight: '300 гр', price: '250 000', desc: 'филе форели под сливочным соусом и микс салата' },
         { name: 'СТЕЙК "РИБАЙ"', weight: '100 гр', price: '95 000', desc: 'мясо говядины, овощи и соус барбекю' },
-        { name: 'СТЕЙК СТРИПЛОЙН СОУСОМ BBQ', weight: '100гр', price: '95 000', desc: 'мясо говядина , овощи, соус BBQ' },
+        { name: 'СТЕЙК СТРИПЛОЙН СОУСОМ BBQ', weight: '100гр', price: '95 000', desc: 'мясо говядина, овощи, соус BBQ' },
         { name: 'ФИЛЕ МИНЬОН В СЛИВОЧНОМ СОУСЕ', weight: '300 гр', price: '235 000', desc: 'бон филе, сливки, лук, грибы, микс салата' },
         { name: 'КРЕВЕТКИ ШАБЛИ В ТЕМПУРЕ', weight: '200гр', price: '160000', desc: 'тигр. креветки, соус чили' },
-        { name: 'МЯСА ПО ФРАНЦУЗКИ', weight: '300 гр', price: '220 000', desc: 'бон филе, лук, грибы, сливки, помидор, сир, чеснок' },
-        { name: 'МЯСА С ГРИБАМИ СЛИВОЧНИМ СОУСЕ', weight: '300 гр', price: '220 000', desc: 'бон филе, лук, грибы, сливки, помидор, сир, чеснок' },
+        { name: 'МЯСА ПО ФРАНЦУЗКИ', weight: '300 гр', price: '220 000', desc: 'бон филе, лук, грибы, сливки, помидор, сыр, чеснок' },
+        { name: 'МЯСА С ГРИБАМИ СЛИВОЧНИМ СОУСЕ', weight: '300 гр', price: '220 000', desc: 'бон филе, лук, грибы, сливки, помидор, сыр, чеснок' },
         { name: 'РАТАТУЙ СИРОМ', weight: '500 гр', price: '400 000' },
       ] : [
+        { name: 'RATATOUILLE', weight: '500 g', price: '65,000', desc: 'beef, eggplant, tomato, wine sauce' }, // Добавлен
+        { name: 'VARAKHSHA', weight: '300 g', price: '75,000', desc: 'beef, tomato, garlic' }, // Добавлен
+        { name: 'LAMB CHEHOLBEN', weight: '350 g', price: '85,000', desc: 'lamb, onion, tomato, pepper, herbs, garlic' }, // Добавлен
         { name: 'CHICKEN SCHNITZEL WITH CHEESE SAUCE', weight: '360 g', price: '120,000', desc: 'chicken fillet, cream sauce, country-style potatoes, mixed salad' },
         { name: 'LAMB CHOPS', weight: '300 g', price: '220,000', desc: 'rack of lamb, grilled vegetables' },
         { name: 'STEWED VEAL WITH VEGETABLES', weight: '300 g', price: '145,000', desc: 'beef, vegetables' },
@@ -201,19 +207,21 @@ export default function Home() {
       title: language === 'ru' ? 'САЛАТЫ' : 'SALADS',
       icon: '🥗',
       items: language === 'ru' ? [
+        { name: 'САЛАТ СУЗАНГАРОН', weight: '350 гр', price: '85 000', desc: 'руколла 60гр, черри 30гр, огурец 20гр, шампиньоны 20гр, перец болгарский 20гр, красный лук 10гр, сыр пармезан 15гр, мясо 100гр, соус 50гр, мини кукуруза 15-20гр' }, // Добавлен
         { name: 'ЧУПОНЧА', weight: '220 гр', price: '65 000', desc: 'помидоры, огурцы, сузьма, зелень' },
         { name: 'СТЕЙК САЛАТ', weight: '200 гр', price: '120 000', desc: 'микс салата, руколла, черри, бон филе, франц соус' },
-        { name: 'РУКОЛЛА С КРЕВЕТКАМИ', weight: '250 гр', price: '140 000', desc: 'руколла, черри, перец болгарсикй, креветки, пармезан, франц соус' },
-        { name: 'ЦЕЗАРЬ С КУРИЦЕЙ ФИЛЕ', weight: '280 гр', price: '90 000', desc: 'кур.филе, айсберг. Черри, перепелиные яйца, пармезан, соус цезарь' },
+        { name: 'РУКОЛЛА С КРЕВЕТКАМИ', weight: '250 гр', price: '140 000', desc: 'руколла, черри, перец болгарский, креветки, пармезан, франц соус' },
+        { name: 'ЦЕЗАРЬ С КУРИЦЕЙ ФИЛЕ', weight: '280 гр', price: '90 000', desc: 'кур.филе, айсберг, черри, перепелиные яйца, пармезан, соус цезарь' },
         { name: 'ЦЕЗАРЬ С КРЕВЕТКАМИ', weight: '220 г', price: '140 000', desc: 'креветки, айсберг, черри, перепелиные яйца, пармезан, соус цезарь' },
         { name: 'ГРЕЧЕСКИЙ', weight: '250 гр', price: '85 000', desc: 'помидоры,огурцы, болгарский перец, сыр фетакса' },
         { name: 'РУККОЛА С МИНИ МОЦАРЕЛОЙ', weight: '220 гр', price: '85 000', desc: 'руккола, черри, болгарский перец, моцарелла, гранатовый соус' },
         { name: 'КАПРЕЗА', weight: '250 гр', price: '110 000', desc: 'моцарелла, помидоры, руккола, соус песто, кедровые орешки' },
         { name: 'ХРУСТЯШИЙ БАКЛАЖАН', weight: '250 гр', price: '95 000', desc: 'хрустящий баклажан, помидоры, сыр креметто, руккола, соус от шефа' },
-        { name: 'БУРАТТА', weight: '200гр', price: '115 000', desc: 'сыр буратта, руккола, черри, песто, французкая заправка' },
+        { name: 'БУРАТТА', weight: '200гр', price: '115 000', desc: 'сыр буратта, руккола, черри, песто, французская заправка' },
         { name: 'ВЕГЕТАРИАНСКИЙ С КРЕМЕТТОЙ', weight: '200гр', price: '70 000', desc: 'микс салата, руколла, черри, сыр креметто, медогорчичный соус, орехи' },
         { name: 'ШАКАРОБ', weight: '220 гр', price: '60 000', desc: 'помидор, красный лук' },
       ] : [
+        { name: 'SUZANGARON SALAD', weight: '350 g', price: '85,000', desc: 'arugula 60g, cherry tomatoes 30g, cucumber 20g, champignons 20g, bell pepper 20g, red onion 10g, parmesan cheese 15g, meat 100g, sauce 50g, mini corn 15-20g' }, // Добавлен
         { name: 'CHUPONCHA', weight: '220 g', price: '65,000', desc: 'tomatoes, cucumbers, suzma, greens' },
         { name: 'STEAK SALAD', weight: '200 g', price: '120,000', desc: 'lettuce mix, arugula, cherry tomatoes, beef tenderloin, French sauce' },
         { name: 'ARUGULA WITH SHRIMPS', weight: '250 g', price: '140,000', desc: 'arugula, cherry tomatoes, bell pepper, shrimp, parmesan, French sauce' },

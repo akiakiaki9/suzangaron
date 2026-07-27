@@ -34,7 +34,7 @@ export default function EnglishPrintPage() {
         eastern: {
             title: 'EASTERN CUISINE',
             items: [
-                { name: 'SUZANGARON PILAF', weight: '1 serving', price: '95,000' },
+                { name: 'SUZANGARON PILAF', weight: '1 serving', price: '65,000' }, // Цена изменена на 65,000
                 { name: 'SUZANGARON', weight: '1 serving', price: '210,000' },
                 { name: 'FRIED BEEF "VAGURI"', weight: '330g / 1 kg', price: '195,000 / 650,000' },
                 { name: 'BON VAGURI', weight: '330g / 1 kg', price: '210,000 / 680,000' },
@@ -48,6 +48,9 @@ export default function EnglishPrintPage() {
         european: {
             title: 'EUROPEAN CUISINE',
             items: [
+                { name: 'RATATOUILLE', weight: '500 g', price: '65,000', desc: 'beef, eggplant, tomato, wine sauce' }, // Добавлен Рататуй
+                { name: 'VARAKHSHA', weight: '300 g', price: '75,000', desc: 'beef, tomato, garlic' }, // Добавлен Варахша
+                { name: 'LAMB CHEHOLBEN', weight: '350 g', price: '85,000', desc: 'lamb, onion, tomato, pepper, herbs, garlic' }, // Добавлена Баранина чехолбен
                 { name: 'CHICKEN SCHNITZEL WITH CHEESE SAUCE', weight: '360 g', price: '120,000', desc: 'chicken fillet, cream sauce, country-style potatoes, mixed salad' },
                 { name: 'LAMB CHOPS', weight: '300 g', price: '220,000', desc: 'rack of lamb, grilled vegetables' },
                 { name: 'STEWED VEAL WITH VEGETABLES', weight: '300 g', price: '145,000', desc: 'beef, vegetables' },
@@ -98,6 +101,7 @@ export default function EnglishPrintPage() {
         salads: {
             title: 'SALADS',
             items: [
+                { name: 'SUZANGARON SALAD', weight: '350 g', price: '85,000', desc: 'arugula 60g, cherry tomatoes 30g, cucumber 20g, champignons 20g, bell pepper 20g, red onion 10g, parmesan cheese 15g, meat 100g, sauce 50g, mini corn 15-20g' }, // Добавлен салат
                 { name: 'CHUPONCHA', weight: '220 g', price: '65,000', desc: 'tomatoes, cucumbers, suzma, greens' },
                 { name: 'STEAK SALAD', weight: '200 g', price: '120,000', desc: 'lettuce mix, arugula, cherry tomatoes, beef tenderloin, French sauce' },
                 { name: 'ARUGULA WITH SHRIMPS', weight: '250 g', price: '140,000', desc: 'arugula, cherry tomatoes, bell pepper, shrimp, parmesan, French sauce' },
