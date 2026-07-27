@@ -250,10 +250,9 @@
 }
 
 .print-section {
-    margin-bottom: 24px;
+    margin-bottom: 32px;
+    page-break-inside: avoid;
     background: white;
-    break-inside: auto;
-    page-break-inside: auto;
 }
 
 .print-section-header {
@@ -283,9 +282,6 @@
     display: flex;
     flex-direction: column;
     gap: 2px;
-
-    break-inside: auto;
-    page-break-inside: auto;
 }
 
 .print-item {
@@ -295,8 +291,6 @@
     padding: 6px 0;
     border-bottom: 1px dotted #f0ebe6;
     transition: background 0.2s ease;
-    break-inside: avoid;
-    page-break-inside: avoid;
 }
 
 .print-item:hover {
@@ -341,10 +335,9 @@
 
 /* Photo Sections with Quotes */
 .print-photo-section {
-    margin: 32px 0;
-
-    break-inside: avoid;
+    margin: 40px 0 50px;
     page-break-inside: avoid;
+    break-inside: avoid;
     background: white;
 }
 
@@ -536,8 +529,8 @@
 
     .print-section {
         background: white !important;
-       break-inside: auto !important;
-    page-break-inside: auto !important;
+        break-inside: avoid;
+        page-break-inside: avoid;
         margin-bottom: 30px !important;
         -webkit-print-color-adjust: exact !important;
         print-color-adjust: exact !important;
@@ -552,8 +545,7 @@
     }
 
     .print-items {
-        break-inside: auto !important;
-    page-break-inside: auto !important;
+        break-inside: avoid;
         -webkit-print-color-adjust: exact !important;
         print-color-adjust: exact !important;
         color-adjust: exact !important;
@@ -648,11 +640,6 @@
     .print-section-title {
         color: #1a1a1a !important;
     }
-
-    .print-section-header{
-    break-after: avoid;
-    page-break-after: avoid;
-}
 
     .print-subtitle {
         color: #555 !important;
